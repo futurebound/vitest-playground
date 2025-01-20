@@ -6,4 +6,5 @@ Learning repository for testing React projects with Vitest.
 
 ```shell
 pnpm create vite@latest
+pnpm add -D vitest
 ```
