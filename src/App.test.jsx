@@ -1,11 +1,15 @@
-import { describe, it, expect } from 'vitest'
+import { describe, it } from 'vitest'
 
-describe('something truthy and falsy', () => {
-  it('true to be true', () => {
-    expect(true).toBe(true)
-  })
+import { render, screen } from '@testing-library/react'
 
-  it('false to be false', () => {
-    expect(false).toBe(false)
+import App from './App'
+
+describe('App', () => {
+  it('renders headline', () => {
+    render(<App title="React" />)
+
+    screen.debug()
+
+    // check if App components renders headline
   })
 })
